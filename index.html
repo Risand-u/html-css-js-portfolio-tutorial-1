@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>my portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">
+      Risandu perera
+    </div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">about</a></li>
+        <li><a href="#experience">experience</a></li>
+        <li><a href="#project">project</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Risandu perera</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">about</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">experience</a></li>
+        <li><a href="#project" onclick="toggleMenu()">project</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+      <div class="section_pic-container">
+        <img src="https://tangerine-hummingbird-1479b6.netlify.app/assets/profile-pic.png">
+      </div>
+      <div class="section_text">
+        <p class="section_text_p1">Hello, I'm</p>
+        <h1 class="title">Risandu perera</h1>
+        <p class="section_text_p2">frontend Developer</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="open('./assets/resume-example.pdf')">
+            Downlaod cv</button>
+            <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            contact info</button>
+        </div>
+        <div id="socials-container">
+          <img 
+          src="https://tangerine-hummingbird-1479b6.netlify.app/assets/linkedin.png" 
+          alt="my linkedin profile" class="icon" onclick="location.href='https://linkedin.com'">
+          <img 
+          src="https://tangerine-hummingbird-1479b6.netlify.app/assets/github.png" 
+          alt="my github profile" class="icon" onclick="location.href='https://github.com'">
+        </div>
+      </div>
+  </section>
+  <section id="about">
+    <p class="section_text_p4">Get to know more</p>
+    <h1 class="title1">About me</h1>
+    <div class="section-container">
+      <div class="section_pic-container">
+        <img src="https://tangerine-hummingbird-1479b6.netlify.app/assets/about-pic.png" 
+        alt="profile-picture" 
+        class="about-pic"/>
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="https://tangerine-hummingbird-1479b6.netlify.app/assets/experience.png" 
+            alt="experience icon"
+            class="icon"/>
+            <h3>experience</h3>
+            <p>2+years <br>frontend Developer</p>
+          </div>
+          <div class="details-container">
+            <img 
+            src="https://tangerine-hummingbird-1479b6.netlify.app/assets/education.png" 
+            alt="education icon"
+            class="icon"/>
+            <h3>education</h3>
+            <p>B.Sc.bachelors degree <br> M.sc. masters degree</p>
+          </div>
+        </div>
+        <div class="text-container"><p>Lorem ipsum, dolor sit amet consectetur adipisicing 
+            elit. Aut, aliquid. Possimus id molestiae magni reiciendis officiis cum quo est 
+            iusto, quisquam tenetur. Beatae veritatis ab deleniti cum libero unde ullam soluta
+            a commodi, officiis non atque omnis eligendi,doloribus magnam est sapiente,
+            nemo eveniet ut nulla voluptas animi. Porro,
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="https://tangerine-hummingbird-1479b6.netlify.app/assets/arrow.png" 
+    alt="arrow icon"
+    class="icon arrow"
+    onclick="location.href='./#project'">
+  </section>
+  <section id="experience">
+    <p class="section_text_p1">Explore my</p>
+    <h1 class="title">experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Frontend development</h2>
+          <div class="article-container">
+            <article>
+              <img src="https://tangerine-hummingbird-1479b6.netlify.app/assets/checkmark.png"
+               alt="experience icon"
+               class="icon">
+               <div>
+                <h1>HTML</h1>
+                <p>experience</p>
+               </div>
+            </article>
+            <article>
+              <img src="https://tangerine-hummingbird-1479b6.netlify.app/assets/checkmark.png"
+               alt="experience icon"
+               class="icon">
+               <div>
+                <h1>CSS</h1>
+                <p>experience</p>
+               </div>
+            </article>
+            <article>
+              <img src="https://tangerine-hummingbird-1479b6.netlify.app/assets/checkmark.png"
+               alt="experience icon"
+               class="icon">
+               <div>
+                <h1>SASS</h1>
+                <p>Intermediate</p>
+               </div>
+            </article>
+            <article>
+              <img src="https://tangerine-hummingbird-1479b6.netlify.app/assets/checkmark.png"
+               alt="experience icon"
+               class="icon">
+               <div>
+                <h1>Javascript</h1>
+                <p>Basic</p>
+               </div>
+            </article>
+            <article>
+              <img src="https://tangerine-hummingbird-1479b6.netlify.app/assets/checkmark.png"
+               alt="experience icon"
+               class="icon">
+               <div>
+                <h1>Typescript</h1>
+                <p>Basic</p>
+               </div>
+            </article>
+            <article>
+              <img src="https://tangerine-hummingbird-1479b6.netlify.app/assets/checkmark.png"
+               alt="experience icon"
+               class="icon">
+               <div>
+                <h1>Material UI</h1>
+                <p>Intermediate</p>
+               </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Frontend development</h2>
+          <div class="article-container">
+            <article>
+              <img src="https://tangerine-hummingbird-1479b6.netlify.app/assets/checkmark.png"
+               alt="experience icon"
+               class="icon">
+               <div>
+                <h1>PostegresQL</h1>
+                <p>Basic</p>
+               </div>
+            </article>
+            <article>
+              <img src="https://tangerine-hummingbird-1479b6.netlify.app/assets/checkmark.png"
+               alt="experience icon"
+               class="icon">
+               <div>
+                <h1>Node JS</h1>
+                <p>Intermediate</p>
+               </div>
+            </article>
+            <article>
+              <img src="https://tangerine-hummingbird-1479b6.netlify.app/assets/checkmark.png"
+               alt="experience icon"
+               class="icon">
+               <div>
+                <h1>Express JS</h1>
+                <p>Intermediate</p>
+               </div>
+            </article>
+            <article>
+              <img src="https://tangerine-hummingbird-1479b6.netlify.app/assets/checkmark.png"
+               alt="experience icon"
+               class="icon">
+               <div>
+                <h1>Git</h1>
+                <p>Intermediate</p>
+               </div>
+              </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="https://tangerine-hummingbird-1479b6.netlify.app/assets/arrow.png" 
+    alt="arrow icon"
+    class="icon arrow"
+    onclick="location.href='./experience'">
+  </section>
+  <section id="projects">
+    <p class="section_text_p1">Browse my Recent</p>
+    <h1 class="title">project</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="https://tangerine-hummingbird-1479b6.netlify.app/assets/project-1.png"
+           alt="project-1"
+           class="project-1img">
+        </div>
+        <h2 class="experience-sub-title project-tittle">
+          project one</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 profile-btn" 
+            onclick="location.href='https://github.com/'">
+            Github
+          </button>
+          <button class="btn btn-color-2 profile-btn" 
+            onclick="location.href='https://github.com/'">
+            Live demo
+          </button>
+          </div>
+      </div>
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="https://tangerine-hummingbird-1479b6.netlify.app/assets/project-2.png"
+           alt="project-2"
+           class="project-1img">
+        </div>
+        <h2 class="experience-sub-title project-tittle">
+          project Two</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 profile-btn" 
+            onclick="location.href='https://github.com/'">
+            Github
+          </button>
+          <button class="btn btn-color-2 profile-btn" 
+            onclick="location.href='https://github.com/'">
+            Live demo
+          </button>
+          </div>
+      </div>
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="https://tangerine-hummingbird-1479b6.netlify.app/assets/project-3.png"
+           alt="project-3"
+           class="project-1img">
+        </div>
+        <h2 class="experience-sub-title project-tittle">
+          project Three</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 profile-btn" 
+            onclick="location.href='https://github.com/'">
+            Github
+          </button>
+          <button class="btn btn-color-2 profile-btn" 
+            onclick="location.href='https://github.com/'">
+            Live demo
+          </button>
+        </div>
+          </div>
+      </div>
+    </div>
+  
+    <img src="https://tangerine-hummingbird-1479b6.netlify.app/assets/arrow.png" 
+    alt="arrow icon"
+    class="icon arrow"
+    onclick="location.href='./#project'">
+  </section>
+  <section id="contact">
+    <p class="section_text_p1">Get in Touch</p>
+    <h1 class="title">contact me </h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="https://tangerine-hummingbird-1479b6.netlify.app/assets/email.png" 
+        alt="Email icon"
+        class="icon email-icon">
+        <p><a href="mailto:exampleemail@gmail.com">Example@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="https://tangerine-hummingbird-1479b6.netlify.app/assets/linkedin.png" 
+        alt="Linkedin icon"
+        class="icon">
+        <p><a href="https://www.linkedin.com">Linkedin</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">about</a></li>
+          <li><a href="#experience">experience</a></li>
+          <li><a href="#project">project</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copy write &#169;2023 Risandu perera. All right reserved</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
